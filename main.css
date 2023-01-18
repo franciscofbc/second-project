@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+body {
+    background-color: #e7e7e7;
+    padding-top: 100px;
+}
+
+header {
+    /*Um ao lado do outro*/
+    display: flex;
+    /*Centralizado*/
+    align-items: center;
+
+    margin-bottom: 40px;
+}
+
+header img {
+    height: 45px;
+    margin-right: 16px;
+}
+
+.container {
+    /*Container vai ocupar 100% até 960px
+    Conteúdo ficará centralizado mesmo em monitores ultrawide
+    Conteúdo não ficará de ponta-a-ponta, tornando a leitura cansativa*/
+    max-width: 960px;
+    width: 100%;
+
+    /*Centralizar na horizontal*/
+    margin: 0 auto;
+}
+
+form {
+    /*Deixar form totalmente uniforme com o zoom*/
+    display: flex;
+
+    max-width: 960px;
+    width: 100%;
+    /*Distribuir espaçamento entre os itens*/
+    justify-content: space-around;
+    margin-bottom: 56px;
+}
+
+form input {
+    font-size: 20px;
+    background-color: #fff;
+    border: none;
+    border-bottom: 2px solid #000;
+    padding: 8px;
+    width: 400px;
+}
+
+form button {
+    background-color: #009432;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+table {
+    /*Para a tabela ocupar toda a área do container*/
+    width: 100%;
+}
+
+table th {
+    border-bottom: 2px solid #000;
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+table td {
+    /*Apenas na parte superior e inferior*/
+    padding: 16px 0;
+    text-align: center;
+    font-size: 18px;
+    /*0.1 é a transparência*/
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
